@@ -1,62 +1,68 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="./style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-  </head>
-  <body>
-    <body>
-    <header>
-    	<h1> Contact </h1>
-	</header>
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact</title>
+</head>
+<body>
+  <!-- header - introducerea paginii -->
+  <header>
+    <!-- h1 - titlu principal: Contact -->
+    <h1>Contact</h1>
+  </header>
 
+  <!-- nav - meniu de navigare între pagini -->
+  <nav>
+    <a href="index.html">Acasă</a>
+    <a href="contact.html">Contact</a>
+  </nav>
 
-	<nav>
-		<a href="index.html">Acasă</a>
-      	<a href="contact.html">Contact</a>
-    </nav>
+  <!-- main - conținutul principal al paginii -->
+  <main>
+    <!-- form - formularul de contact -->
+    <form>
+      <!-- Câmp Nume -->
+      <!-- label cu atribut for care referențiază id-ul input-ului -->
+      <label for="nume">Nume</label>
+      <!-- input type="text" cu id și name -->
+      <input type="text" id="nume" name="nume">
 
-    <main>
-      <section>
+      <!-- Câmp E-mail -->
+      <!-- label cu atribut for care referențiază id-ul input-ului -->
+      <label for="email">E-mail</label>
+      <!-- input type="email" cu id și name -->
+      <input type="email" id="email" name="email">
 
-        <h2> Formular de contact</h2>
-      
-      </section>
+      <!-- Câmp Activitatea preferată -->
+      <!-- label cu atribut for care referențiază id-ul select-ului -->
+      <label for="activitate">Activitatea preferată</label>
+      <!-- select cu id și name, și 3 option cu valori adaptate temei -->
+      <select id="activitate" name="activitate">
+        <option><!-- Varianta 1 --></option>
+        <option><!-- Varianta 2 --></option>
+        <option><!-- Varianta 3 --></option>
+      </select>
 
-      <p> Completeaza pentru a ne transmite un mesaj</p>
+      <!-- Câmp Mesaj -->
+      <!-- label cu atribut for care referențiază id-ul textarea-ului -->
+      <label for="mesaj">Mesaj</label>
+      <!-- textarea cu id și name -->
+      <textarea id="mesaj" name="mesaj"></textarea>
 
-      <form>
-        <p> <label> Nume </label> <input type="text" id=nume name="nume"></p>
-        <p> <label> Email </label> <input type="email" id=email name="email"></p>
-        <p> <label> Activitate profesionala </label> 
-          
-          <select id=activitate name="activitate">
-            <option value="comunicare"> Comunicare </option>
-            <option value="marketing"> Marketing </option>
-            <option value="drept"> Drept </option>
+      <!-- Buton demonstrativ -->
+      <!-- button type="button" (nu trimite date) -->
+      <button type="button">Formular demonstrativ</button>
+    </form>
 
-          </select>
-        </p>
+    <!-- Text educațional -->
+    <!-- Precizare că formularul este doar exemplu și nu trimite date -->
+    <p>Acest formular este un exemplu educațional; datele nu sunt trimise.</p>
+  </main>
 
-          <p> <label> Mesaj </label> 
-          
-          <textarea id=mesaj name="mesaj" rows="4"> </textarea>
-            
-        </p>
-
-        <button type="button"> Formular exemplu </button>
-        
-      </form>
-
-    </main>
-    <footer>
-
-      <p> Proiect realizat la disciplina Introducere in Web Design </p>
-      
-    </footer>
-      
-    <script src="./script.js"></script>
-  </body>
+  <!-- footer - mențiune finală -->
+  <footer>
+    <!-- Text: Proiect realizat pentru disciplina Introducere în Web Design -->
+  </footer>
+</body>
 </html>
